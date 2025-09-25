@@ -59,7 +59,7 @@ module.exports.run = async function({ api, event, enableCommands, args, Utils, p
 ╚════════════╝\n\n`);
 
       for (let i = start; i < end; i++) {
-        helpMessage += formatFont(`⊂⊃ ➠ ${prefix}${commands[i]}\n`);
+        helpMessage += formatFont(`•—»[${commands[i]}]«—•\n`);
       }
 
       helpMessage += formatFont(`\n𝙴𝚅𝙴𝙽𝚃 𝙻𝙸𝚂𝚃:\n\n`);
@@ -80,7 +80,7 @@ module.exports.run = async function({ api, event, enableCommands, args, Utils, p
   ♡ 𝙰𝙻𝙻 𝙲𝙾𝙼𝙼𝙰𝙽𝙳'𝚂 ♡
 ╚════════════╝\n\n`);
       commands.forEach((command) => {
-        helpMessage += formatFont(`⊂⊃ ➠ ${prefix}${command}\n`);
+        helpMessage += formatFont(`•—»[${command}]«—•\n`);
       });
       helpMessage += formatFont(`\n𝗧𝗼𝘁𝗮𝗹 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀:〔 ${totalCommands} 〕\n`);
       helpMessage += formatFont(`To view information about a specific command, type "${prefix}help <command name>".`);
